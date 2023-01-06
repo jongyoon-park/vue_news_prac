@@ -1,4 +1,3 @@
-
 export default {
     SET_NEWS(state, news) { //이 news라는 인자는 action에서 context.commit으로 넘어온 response.data
         state.news = news;

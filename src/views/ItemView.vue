@@ -5,19 +5,19 @@
         User
       </div>
       <div class="user-container">
-        <router-link :to="`/user/${askInfo.user}`">{{askInfo.user}}</router-link>
-        <small>{{askInfo.point}} points by  {{askInfo.time_ago}}</small>
+        <router-link :to="`/user/${askInfo.user}`">{{ askInfo.user }}</router-link>
+        <small>{{ askInfo.point }} points by {{ askInfo.time_ago }}</small>
       </div>
-      <h2>{{askInfo.title}}</h2>
+      <h2>{{ askInfo.title }}</h2>
       <p v-html="askInfo.content"></p>
     </div>
   </section>
   <section>
     <div>
       <p v-for="comment in askInfo.comments">
-        <small>{{comment.user}} {{comment.time_ago}}</small>
+        <small>{{ comment.user }} {{ comment.time_ago }}</small>
         <br>
-        <div v-html="comment.content"></div>
+      <div v-html="comment.content"></div>
       </p>
     </div>
   </section>
@@ -27,9 +27,9 @@
 import {mapGetters} from "vuex";
 
 export default {
-  computed : {
+  computed: {
     ...mapGetters({
-      askInfo : "askInfo"
+      askInfo: "askInfo"
     })
   },
   created() {
@@ -40,8 +40,8 @@ export default {
 </script>
 
 <style scoped>
-  .user-container {
-    display: flex;
-    align-items: center;
-  }
+.user-container {
+  display: flex;
+  align-items: center;
+}
 </style>

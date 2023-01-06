@@ -1,6 +1,7 @@
 <template>
   <div>
     <ul class="news-list">
+      <!-- v-for는 넘겨준 배열을 반복문 돌려 ask를 뱉어줌 -->
       <li v-for="item in listItems" class="post">
         <div class="points">
           {{item.points || 0}}

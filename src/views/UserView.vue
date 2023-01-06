@@ -1,16 +1,16 @@
 <template>
   <div>
-    <p>name : {{userInfo.id}}</p>
-    <p>karma : {{userInfo.karma}}</p>
-    <p>created : {{userInfo.created}}</p>
-    <p>about : {{userInfo.about}}</p>
+    <p>name : {{ userInfo.id }}</p>
+    <p>karma : {{ userInfo.karma }}</p>
+    <p>created : {{ userInfo.created }}</p>
+    <p>about : {{ userInfo.about }}</p>
   </div>
 </template>
 
 <script>
 
 export default {
-  computed : {
+  computed: {
     userInfo() {
       return this.$store.state.userInfo;
     }

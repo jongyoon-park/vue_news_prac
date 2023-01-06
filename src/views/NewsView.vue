@@ -1,6 +1,6 @@
 <template>
   <div>
-    <list-item />
+    <list-item/>
   </div>
 </template>
 
@@ -9,12 +9,12 @@
 import ListItem from "@/components/ListItem.vue";
 
 export default {
-  components : {
+  components: {
     ListItem,
   },
   data() {
     return {
-      fetchType : "FETCH_NEWS"
+      fetchType: "FETCH_NEWS"
     }
   }
 }

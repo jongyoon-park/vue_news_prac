@@ -22,17 +22,21 @@ body {
   padding: 0;
   margin: 0;
 }
+
 a {
   color: #35495e;
   text-decoration: none;
 }
+
 a:hover {
   color: #42B883;
   text-decoration: underline;
 }
+
 a.router-link-exact-active {
   text-decoration: underline;
 }
+
 /*router transition*/
 .page-enter-active,
 .page-leave-active {
